@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">  
+  <title>RUMUS LAYANG-LAYANG</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <form id="formInput"></p>
+ <label> Masukkan Diagonal 1 :</label>
+  <input type = "number" id = "dsatu">
+  <br>
+ <label> Masukkan Diagonal 2:</label>
+  <input type = "number" id = "ddua">
+<br>
+  <button onclick ="tampilkanHasil()"> hitung </button>
+  </form>
+<script>
+  function tampilkanHasil(){
+    var dsatu = document.getElementById("dsatu").value;
+    var ddua = document.getElementById("ddua").value;
+	var hasil = (dsatu  * ddua)/2
+	document.write ("<h1>Luas Layang-Layang</h1>");
+    document.write ("<p>"+hasil+"</p>");
+
+    
+  }
+</script>
+<hr>
+<a href="Rumus Matematika.html">Kembali</a>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>RUMUS SEGITIGA</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <form id="formInput"></p>
+ <label> Masukkan Alas :</label>
+  <input type = "number" id = "alas">
+  <br>
+ <label> Masukkan Tinggi :</label>
+  <input type = "number" id = "tinggi">
+  <br>
+  <button onclick ="tampilkanHasil()"> hitung </button>
+  </form>
+<script>
+  function tampilkanHasil(){
+    var alas = document.getElementById("alas").value;
+    var tinggi = document.getElementById("tinggi").value;
+	var hasil = (alas * tinggi)/2
+	document.write ("<h1>Luas Segitiga</h1>");
+    document.write ("<p>"+hasil+"</p>");
+
+    
+  }
+</script>
+<hr>
+<a href="Rumus Matematika.html">Kembali</a>
+</body>
+</html>

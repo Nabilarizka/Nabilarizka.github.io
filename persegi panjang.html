@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Rumus Persegi Panjang</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <form id ="form">
+    <label> Masukkan Panjang: </label>
+    <input type = "text" id = "pjg">
+    <br>
+    <label> Masukkan Lebar: </label>
+    <input type = "text" id = "lbr">
+    <br>
+    <button onclick ="tampilkanHasil()">Hitung</button>
+  </form>
+  <script>
+    function tampilkanHasil(){
+      var pjg = document.getElementById("pjg").value;
+      var lbr = document.getElementById("lbr").value;
+      var hasil = pjg * lbr;
+      document.write ("<h1>Luas Persegi Panjang</h1>");
+      document.write ("<p>"+hasil+"</p>");
+    }
+  </script>
+  <hr>
+<a href="Rumus Matematika.html">Kembali</a>
+  </body>
+</html>
